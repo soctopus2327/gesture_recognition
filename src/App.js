@@ -125,7 +125,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 style={{ textAlign: "center" }}>Loading...</h1>
+      <h1 style={{ textAlign: "center", position:'absolute', bottom:575 }}>Hand Gesture Detector</h1>
+      <p style={{textAlign:'center', justifyContent:'start', position:'absolute', bottom:10}}>Please wait a few moments for model to load...</p>
+        
         <Webcam
           ref={webcamRef}
           style={{
